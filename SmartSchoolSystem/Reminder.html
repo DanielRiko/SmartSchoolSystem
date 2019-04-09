@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Reminder</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Reminder;
+	}
+	#Reminder * {
+		margin: 0;
+		padding: 0;
+	}
+	#Reminder {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Reminder;
+		--web-view-id: Reminder;
+		--web-enable-deep-linking: true;
+	}
+	#Reminder_A2_RepeatGrid_2 {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 589px;
+		left: 0.5px;
+		top: 72px;
+		overflow: hidden;
+	}
+	#Reminder_A2_Group_17 {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 140.5px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#reminder_right_here {
+		opacity: 1;
+		position: absolute;
+		left: 60.5px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 254px;
+		height: 82px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(101,105,216,1);
+	}
+	#ID11_30 {
+		opacity: 1;
+		position: absolute;
+		left: 173.5px;
+		top: 92px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,105,216,1);
+	}
+	#divider {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(240, 240, 240);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divider {
+		overflow: visible;
+		position: absolute;
+		top: 140.5px;
+		left: 0px;
+		width: 375px;
+		height: 1px;
+	}
+	#Reminder_A2_Group_18 {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 140.5px;
+		left: 0px;
+		top: 155px;
+		overflow: visible;
+	}
+	#reminder_right_here_A2_Text_33 {
+		opacity: 1;
+		position: absolute;
+		left: 60.5px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 254px;
+		height: 82px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(101,105,216,1);
+	}
+	#ID11_30_A2_Text_34 {
+		opacity: 1;
+		position: absolute;
+		left: 173.5px;
+		top: 92px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,105,216,1);
+	}
+	#divider_A2_Line_8 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(240, 240, 240);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divider_A2_Line_8 {
+		overflow: visible;
+		position: absolute;
+		top: 140.5px;
+		left: 0px;
+		width: 375px;
+		height: 1px;
+	}
+	#Reminder_A2_Group_19 {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 140.5px;
+		left: 0px;
+		top: 310px;
+		overflow: visible;
+	}
+	#reminder_right_here_A2_Text_35 {
+		opacity: 1;
+		position: absolute;
+		left: 60.5px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 254px;
+		height: 82px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(101,105,216,1);
+	}
+	#ID11_30_A2_Text_36 {
+		opacity: 1;
+		position: absolute;
+		left: 173.5px;
+		top: 92px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,105,216,1);
+	}
+	#divider_A2_Line_9 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(240, 240, 240);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divider_A2_Line_9 {
+		overflow: visible;
+		position: absolute;
+		top: 140.5px;
+		left: 0px;
+		width: 375px;
+		height: 1px;
+	}
+	#Reminder_A2_Group_20 {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 140.5px;
+		left: 0px;
+		top: 465px;
+		overflow: visible;
+	}
+	#reminder_right_here_A2_Text_37 {
+		opacity: 1;
+		position: absolute;
+		left: 60.5px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 254px;
+		height: 82px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(101,105,216,1);
+	}
+	#ID11_30_A2_Text_38 {
+		opacity: 1;
+		position: absolute;
+		left: 173.5px;
+		top: 92px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -2px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,105,216,1);
+	}
+	#divider_A2_Line_10 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(240, 240, 240);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divider_A2_Line_10 {
+		overflow: visible;
+		position: absolute;
+		top: 140.5px;
+		left: 0px;
+		width: 375px;
+		height: 1px;
+	}
+	#rectangle {
+		opacity: 1;
+		fill: rgba(101,105,216,1);
+	}
+	.rectangle {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 661px;
+		left: 0px;
+		width: 375px;
+		height: 66px;
+	}
+	#followers_link {
+		opacity: 1;
+		position: absolute;
+		width: 376px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_7 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_5 {
+		opacity: 1;
+		position: absolute;
+		width: 70px;
+		height: 58px;
+		left: 51px;
+		top: 12px;
+		overflow: visible;
+	}
+	#notification {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 39px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -1px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(188,197,211,1);
+	}
+	#ID4 {
+		opacity: 0.4;
+		position: absolute;
+		left: 27px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 17px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(188,197,211,1);
+	}
+	#comments_link {
+		opacity: 1;
+		position: absolute;
+		width: 56px;
+		height: 60px;
+		left: 269px;
+		top: 12px;
+		overflow: visible;
+	}
+	#reminder {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 39px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -1px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(101,105,216,1);
+	}
+	#ID2_ {
+		opacity: 1;
+		position: absolute;
+		left: 20px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 17px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(101,105,216,1);
+	}
+	#button_text {
+		opacity: 1;
+		position: absolute;
+		left: 31px;
+		top: 684px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 315px;
+		height: 23px;
+		line-height: 24px;
+		margin-top: -4px;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#reviews_link {
+		opacity: 1;
+		position: absolute;
+		width: 106px;
+		height: 27px;
+		left: 142px;
+		top: 28px;
+		overflow: visible;
+	}
+	#main_profile {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Gibson;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(188,197,211,1);
+	}
+	#Rectangle_6 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 85px;
+		left: 0px;
+		top: 727px;
+	}
+</style>
+</head>
+<body>
+<div id="Reminder">
+	<div id="Reminder_A2_RepeatGrid_2">
+		<div id="Reminder_A2_Group_17">
+			<div id="reminder_right_here">
+				<span>reminder right here</span>
+			</div>
+			<div id="ID11_30">
+				<span>11:30</span>
+			</div>
+			<svg class="divider">
+				<path id="divider" d="M 0 0 L 375 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Reminder_A2_Group_18">
+			<div id="reminder_right_here_A2_Text_33">
+				<span>reminder right here</span>
+			</div>
+			<div id="ID11_30_A2_Text_34">
+				<span>11:30</span>
+			</div>
+			<svg class="divider_A2_Line_8">
+				<path id="divider_A2_Line_8" d="M 0 0 L 375 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Reminder_A2_Group_19">
+			<div id="reminder_right_here_A2_Text_35">
+				<span>reminder right here</span>
+			</div>
+			<div id="ID11_30_A2_Text_36">
+				<span>11:30</span>
+			</div>
+			<svg class="divider_A2_Line_9">
+				<path id="divider_A2_Line_9" d="M 0 0 L 375 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Reminder_A2_Group_20">
+			<div id="reminder_right_here_A2_Text_37">
+				<span>reminder right here</span>
+			</div>
+			<div id="ID11_30_A2_Text_38">
+				<span>11:30</span>
+			</div>
+			<svg class="divider_A2_Line_10">
+				<path id="divider_A2_Line_10" d="M 0 0 L 375 0">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="rectangle" viewBox="0 0 375 66">
+		<path id="rectangle" d="M 0 0 L 375 0 L 375 66 L 0 66 L 0 0 Z">
+		</path>
+	</svg>
+	<div id="followers_link">
+		<svg class="Rectangle_7">
+			<rect id="Rectangle_7" rx="0" ry="0" x="0" y="0" width="376" height="67">
+			</rect>
+		</svg>
+		<div id="Group_5">
+			<div id="notification">
+				<span>notification</span>
+			</div>
+			<div id="ID4">
+				<span>4</span>
+			</div>
+		</div>
+	</div>
+	<div id="comments_link">
+		<div id="reminder">
+			<span>reminder</span>
+		</div>
+		<div id="ID2_">
+			<span>2</span>
+		</div>
+	</div>
+	<div id="button_text">
+		<span>Reminder</span>
+	</div>
+	<div id="reviews_link">
+		<div id="main_profile">
+			<span>main profile</span>
+		</div>
+	</div>
+	<svg class="Rectangle_6">
+		<rect id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="376" height="85">
+		</rect>
+	</svg>
+</div>
+</body>
+</html>
