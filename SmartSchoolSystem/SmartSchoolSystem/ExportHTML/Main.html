@@ -3,72 +3,53 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>Main Profile </title>
+<title>SmartSchoolSystem</title>
 <style id="applicationStylesheet" type="text/css">
 	body {
 		margin: 0;
 		padding: 0;
 	}
 	:root {
-		--web-view-ids: Main_Profile_;
+		--web-view-ids: Main;
 	}
-	#Main_Profile_ * {
+	#Main * {
 		margin: 0;
 		padding: 0;
 	}
-	#Main_Profile_ {
+	#Main {
 		position: absolute;
 		box-sizing: border-box;
 		background: #E5E5E5;
-		width: 375px;
-		height: 812px;
+		width: 360px;
+		height: 640px;
+		font-family: "Helvetica";
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
 		margin: 0;
 		padding: 0;
 		opacity: 1;
-		--web-view-name: Main Profile ;
-		--web-view-id: Main_Profile_;
+		--web-view-name: Main;
+		--web-view-id: Main;
 		--web-enable-deep-linking: true;
 	}
-	#rectangle_A0_Path_2 {
+	#rectangle {
 		opacity: 1;
 		fill: rgba(255,87,143,1);
 	}
-	.rectangle_A0_Path_2 {
+	.rectangle {
 		transform: matrix(1,0,0,1,0,0);
 		overflow: visible;
 		position: absolute;
-		top: 661px;
+		top: 574px;
 		left: 0px;
-		width: 375px;
+		width: 360px;
 		height: 66px;
-	}
-	#button_text_A0_Text_6 {
-		opacity: 1;
-		position: absolute;
-		left: 31px;
-		top: 684px;
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		width: 315px;
-		height: 23px;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: center;
-		font-family: Gibson;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
 	}
 	#Daniel_Riko {
 		opacity: 1;
 		position: absolute;
-		left: 123px;
-		top: 29px;
+		left: 115.469px;
+		top: 0px;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
@@ -76,7 +57,7 @@
 		width: 131px;
 		height: 35px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 26px;
@@ -87,8 +68,8 @@
 		position: absolute;
 		width: 106px;
 		height: 27px;
-		left: 142px;
-		top: 222px;
+		left: 127.082px;
+		top: 187.002px;
 		overflow: visible;
 	}
 	#main_profile {
@@ -103,7 +84,7 @@
 		width: 107px;
 		white-space: nowrap;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 20px;
@@ -114,8 +95,8 @@
 		position: absolute;
 		width: 70px;
 		height: 60px;
-		left: 53px;
-		top: 206px;
+		left: 45px;
+		top: 154.987px;
 		overflow: visible;
 	}
 	#notification {
@@ -132,14 +113,14 @@
 		line-height: 16px;
 		margin-top: -1px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
 		color: rgba(188,197,211,1);
 	}
-	#ID4_ {
-		opacity: 1;
+	#ID3_ {
+		opacity: 0.3;
 		position: absolute;
 		left: 27px;
 		top: 0px;
@@ -150,7 +131,7 @@
 		width: 17px;
 		white-space: nowrap;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 30px;
@@ -171,37 +152,24 @@
 		overflow: visible;
 		width: 117px;
 		height: 116px;
-		left: 129px;
-		top: 90px;
+		left: 121.5px;
+		top: 61px;
 	}
-	#rectangle_A0_Path_2 {
-		opacity: 1;
-		fill: rgba(255,87,143,1);
-	}
-	.rectangle_A0_Path_2 {
-		transform: matrix(1,0,0,1,0,0);
-		overflow: visible;
-		position: absolute;
-		top: 661px;
-		left: 0px;
-		width: 375px;
-		height: 66px;
-	}
-	#button_text_A0_Text_6 {
+	#button_text {
 		opacity: 1;
 		position: absolute;
 		left: 31px;
-		top: 684px;
+		top: 600px;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		width: 315px;
+		width: 300px;
 		height: 23px;
 		line-height: 24px;
 		margin-top: -4px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 16px;
@@ -212,7 +180,7 @@
 		position: absolute;
 		width: 0px;
 		height: 0px;
-		left: 905px;
+		left: 897px;
 		top: -151px;
 		overflow: visible;
 	}
@@ -221,8 +189,8 @@
 		position: absolute;
 		width: 56px;
 		height: 58px;
-		left: 267px;
-		top: 206px;
+		left: 240px;
+		top: 155.988px;
 		overflow: visible;
 	}
 	#comments_link_A0_Group_5 {
@@ -234,8 +202,8 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#ID2 {
-		opacity: 1;
+	#ID3 {
+		opacity: 0.3;
 		position: absolute;
 		left: 0px;
 		top: 0px;
@@ -246,7 +214,7 @@
 		width: 17px;
 		white-space: nowrap;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: bold;
 		font-size: 30px;
@@ -266,7 +234,7 @@
 		line-height: 16px;
 		margin-top: -1px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
@@ -279,16 +247,16 @@
 	.Rectangle_1 {
 		position: absolute;
 		overflow: visible;
-		width: 375px;
+		width: 360px;
 		height: 330px;
 		left: 0px;
-		top: 331px;
+		top: 222.089px;
 	}
 	#level___10 {
 		opacity: 1;
 		position: absolute;
-		left: 123px;
-		top: 275px;
+		left: 115.469px;
+		top: 245.989px;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
@@ -296,7 +264,7 @@
 		width: 131px;
 		height: 49px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 20px;
@@ -305,8 +273,8 @@
 	#ID200xp__left {
 		opacity: 1;
 		position: absolute;
-		left: 123px;
-		top: 324px;
+		left: 115.469px;
+		top: 294.987px;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
@@ -314,7 +282,7 @@
 		width: 131px;
 		height: 49px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 20px;
@@ -323,10 +291,10 @@
 	#Level_bar {
 		opacity: 1;
 		position: absolute;
-		width: 335px;
+		width: 320px;
 		height: 21px;
 		left: 20px;
-		top: 314px;
+		top: 285.008px;
 		overflow: visible;
 	}
 	#level_10 {
@@ -341,7 +309,7 @@
 		width: 66px;
 		height: 21px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 16px;
@@ -350,7 +318,7 @@
 	#level_11 {
 		opacity: 1;
 		position: absolute;
-		left: 270px;
+		left: 255px;
 		top: 0px;
 		box-sizing: border-box;
 		margin: 0;
@@ -359,7 +327,7 @@
 		width: 66px;
 		height: 21px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 16px;
@@ -368,10 +336,10 @@
 	#Group_1 {
 		opacity: 1;
 		position: absolute;
-		width: 270px;
+		width: 255px;
 		height: 0px;
 		left: 52.5px;
-		top: 313.5px;
+		top: 284.52px;
 		overflow: visible;
 	}
 	#Line_1 {
@@ -389,7 +357,7 @@
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		width: 275px;
+		width: 260px;
 		height: 5px;
 	}
 	#Line_2 {
@@ -407,16 +375,16 @@
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		width: 229px;
+		width: 214px;
 		height: 5px;
 	}
 	#Group_4 {
 		opacity: 1;
 		position: absolute;
-		width: 335px;
+		width: 320px;
 		height: 86px;
 		left: 20px;
-		top: 399px;
+		top: 369.941px;
 		overflow: visible;
 	}
 	#Rectangle_8 {
@@ -432,7 +400,7 @@
 	.Rectangle_8 {
 		position: absolute;
 		overflow: visible;
-		width: 335px;
+		width: 320px;
 		height: 86px;
 		left: 0px;
 		top: 0px;
@@ -440,7 +408,7 @@
 	#Reminder {
 		opacity: 1;
 		position: absolute;
-		left: 90px;
+		left: 82.458px;
 		top: 11px;
 		box-sizing: border-box;
 		margin: 0;
@@ -449,7 +417,7 @@
 		width: 157px;
 		height: 32px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 24px;
@@ -458,7 +426,7 @@
 	#ID11_30 {
 		opacity: 1;
 		position: absolute;
-		left: 117px;
+		left: 109.468px;
 		top: 43px;
 		box-sizing: border-box;
 		margin: 0;
@@ -469,7 +437,7 @@
 		line-height: 16px;
 		margin-top: -2px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 12px;
@@ -478,10 +446,10 @@
 	#Group_4_A0_Group_9 {
 		opacity: 1;
 		position: absolute;
-		width: 335px;
+		width: 320px;
 		height: 86px;
 		left: 20px;
-		top: 511px;
+		top: 479.841px;
 		overflow: visible;
 	}
 	#Rectangle_8_A0_Rectangle_3 {
@@ -497,7 +465,7 @@
 	.Rectangle_8_A0_Rectangle_3 {
 		position: absolute;
 		overflow: visible;
-		width: 335px;
+		width: 320px;
 		height: 86px;
 		left: 0px;
 		top: 0px;
@@ -505,7 +473,7 @@
 	#Notification {
 		opacity: 1;
 		position: absolute;
-		left: 90px;
+		left: 82.458px;
 		top: 11px;
 		box-sizing: border-box;
 		margin: 0;
@@ -514,7 +482,7 @@
 		width: 157px;
 		height: 32px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 24px;
@@ -529,12 +497,12 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		width: 270px;
+		width: 255px;
 		height: 32px;
 		line-height: 16px;
 		margin-top: -2px;
 		text-align: center;
-		font-family: Gibson;
+		font-family: Gibson, "Helvetica";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 12px;
@@ -543,14 +511,11 @@
 </style>
 </head>
 <body>
-<div id="Main_Profile_">
-	<svg class="rectangle_A0_Path_2" viewBox="0 0 375 66">
-		<path id="rectangle_A0_Path_2" d="M 0 0 L 375 0 L 375 66 L 0 66 L 0 0 Z">
+<div id="Main">
+	<svg class="rectangle" viewBox="0 0 360 66">
+		<path id="rectangle" d="M 0 0 L 360 0 L 360 66 L 0 66 L 0 0 Z">
 		</path>
 	</svg>
-	<div id="button_text_A0_Text_6">
-		<span>Main Profile </span>
-	</div>
 	<div id="Daniel_Riko">
 		<span>Daniel Riko</span>
 	</div>
@@ -563,27 +528,23 @@
 		<div id="notification">
 			<span>notification</span>
 		</div>
-		<div id="ID4_">
-			<span>4<br/></span>
+		<div id="ID3_">
+			<span>3<br/></span>
 		</div>
 	</div>
 	<svg class="Ellipse_1">
 		<ellipse id="Ellipse_1" rx="58.5" ry="58" cx="58.5" cy="58">
 		</ellipse>
 	</svg>
-	<svg class="rectangle_A0_Path_2" viewBox="0 0 375 66">
-		<path id="rectangle_A0_Path_2" d="M 0 0 L 375 0 L 375 66 L 0 66 L 0 0 Z">
-		</path>
-	</svg>
-	<div id="button_text_A0_Text_6">
+	<div id="button_text">
 		<span>Main Profile </span>
 	</div>
 	<div id="comments_link">
 	</div>
 	<div id="Group_3">
 		<div id="comments_link_A0_Group_5">
-			<div id="ID2">
-				<span>2</span>
+			<div id="ID3">
+				<span>3</span>
 			</div>
 		</div>
 		<div id="reminder">
@@ -591,7 +552,7 @@
 		</div>
 	</div>
 	<svg class="Rectangle_1">
-		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="375" height="330">
+		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="360" height="330">
 		</rect>
 	</svg>
 	<div id="level___10">
@@ -610,17 +571,17 @@
 	</div>
 	<div id="Group_1">
 		<svg class="Line_1">
-			<path id="Line_1" d="M 0 0 L 270 0">
+			<path id="Line_1" d="M 0 0 L 255 0">
 			</path>
 		</svg>
 		<svg class="Line_2">
-			<path id="Line_2" d="M 0 0 L 224 0">
+			<path id="Line_2" d="M 0 0 L 209 0">
 			</path>
 		</svg>
 	</div>
 	<div id="Group_4">
 		<svg class="Rectangle_8">
-			<rect id="Rectangle_8" rx="43" ry="43" x="0" y="0" width="335" height="86">
+			<rect id="Rectangle_8" rx="43" ry="43" x="0" y="0" width="320" height="86">
 			</rect>
 		</svg>
 		<div id="Reminder">
@@ -632,7 +593,7 @@
 	</div>
 	<div id="Group_4_A0_Group_9">
 		<svg class="Rectangle_8_A0_Rectangle_3">
-			<rect id="Rectangle_8_A0_Rectangle_3" rx="43" ry="43" x="0" y="0" width="335" height="86">
+			<rect id="Rectangle_8_A0_Rectangle_3" rx="43" ry="43" x="0" y="0" width="320" height="86">
 			</rect>
 		</svg>
 		<div id="Notification">
