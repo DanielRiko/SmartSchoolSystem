@@ -22,17 +22,22 @@
 
     document.getElementById("followers_link").addEventListener("click", sendToNotifications);
     document.getElementById("Group_3").addEventListener("click", sendToReminder);
+    document.getElementById("comments_link").addEventListener("click", sendToReminder);
     document.getElementById("reviews_link").addEventListener("click", sendToMain);
+    document.getElementById("Group_5").addEventListener("click", sendToMain);
 
     function sendToNotifications() {
+        alert("lmao");
         location.replace("Notification.html");
     }
 
     function sendToMain() {
+        alert("lmao");
         location.replace("index.html");
     }
 
     function sendToReminder() {
+        alert("lmao");
         location.replace("Reminder.html");
     }
     function onPause() {
