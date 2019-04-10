@@ -21,7 +21,9 @@
     };
 
     document.getElementById("followers_link").addEventListener("click", sendToNotifications);
+    document.getElementById("Notification").addEventListener("click", sendToNotifications);
     document.getElementById("Group_3").addEventListener("click", sendToReminder);
+    document.getElementById("Reminder").addEventListener("click", sendToReminder);
 
     function sendToNotifications() {
         location.replace("Notification.html");
