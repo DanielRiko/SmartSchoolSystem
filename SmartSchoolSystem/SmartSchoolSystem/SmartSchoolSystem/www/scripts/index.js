@@ -24,12 +24,10 @@
     document.getElementById("Group_3").addEventListener("click", sendToReminder);
 
     function sendToNotifications() {
-        alert("lmao");
         location.replace("Notification.html");
     }
 
     function sendToReminder() {
-        alert("lmao");
         location.replace("Reminder.html");
     }
     function onPause() {

@@ -24,12 +24,10 @@
     document.getElementById("Group_5").addEventListener("click", sendToMain);
 
     function sendToReminder() {
-        alert("lmao");
         location.replace("Reminder.html");
     }
 
     function sendToMain() {
-        alert("lmao");
         location.replace("index.html");
     }
     function onPause() {

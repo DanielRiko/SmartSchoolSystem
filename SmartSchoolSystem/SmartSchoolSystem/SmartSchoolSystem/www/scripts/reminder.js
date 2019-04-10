@@ -24,12 +24,10 @@
     document.getElementById("reviews_link").addEventListener("click", sendToMain);
 
     function sendToNotifications() {
-        alert("lmao");
         location.replace("Notification.html");
     }
 
     function sendToMain() {
-        alert("lmao");
         location.replace("index.html");
     }
     function onPause() {
