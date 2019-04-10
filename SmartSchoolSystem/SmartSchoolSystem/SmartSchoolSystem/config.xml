@@ -107,4 +107,5 @@
   <preference name="android-maxSdkVersion" value="29" />
   <preference name="android-targetSdkVersion" value="24" />
   <preference name="Orientation" value="portrait" />
+  <plugin name="cordova-plugin-camera" spec="~2.4.1" />
 </widget>
